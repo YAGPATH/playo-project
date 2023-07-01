@@ -149,7 +149,7 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
         }
 
 
-        let response = await fetch("../database/bookvenue.json");
+        let response = await fetch("./database/bookvenue.json");
         let data = await response.json();
         //console.log(data);
 
@@ -161,7 +161,7 @@ document.querySelector("#sendOTP").addEventListener("click", ()=>{
         })
 
         console.log(filterData);
-       apprndData(filterData)
+       apprndData(filterData);
     }
 
 
